@@ -40,7 +40,7 @@ function mergesort(array) {
                     var temp = array[rightIndex];
                     // All elements get shifted from leftIndex through rightIndex -1 one to the right.
                     // This maintains order of unsorted portion of two sorted "subarrays".
-                    for(var shiftIndex = rightIndex; shiftIndex > leftIndex; rightIndex--)
+                    for(var shiftIndex = rightIndex; shiftIndex > leftIndex; shiftIndex--)
                     {
                         array[shiftIndex] = array[shiftIndex - 1];
                     }
