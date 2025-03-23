@@ -14,3 +14,9 @@ part of the array each recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+After each iteration, sortWidth doubles, so after x iterations, sortWidth will
+be $2^x$, and my outer while loop runs while $2^x+1 < 2n$, as it must run so that
+it performs at least one iteration encompassing the entire input array.  
+Taking $\log_{2}$ of both sides of the inequality:  
+$\log_{2} 2^(x+1) < \log_{2} 2n$
