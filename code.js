@@ -30,7 +30,7 @@ function mergesort(array) {
             while(leftIndex < rightIndex && rightIndex < rightSortBound)
             {
                 // If the current element in the left "subarray" is correct, move on.
-                if(array[leftIndex] <= array[j])
+                if(array[leftIndex] <= array[rightIndex])
                 {
                     leftIndex++;
                 }
