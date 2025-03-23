@@ -36,6 +36,11 @@ Adding up these we get $\Theta(log_{2} n) + \Theta(n) +\Theta(n^2)$. As we don't
 account for lower order terms, or constants, that gives us a final worst case
 scenario time complexity of $\Theta(n^2)$ for my iterative in place merge sort.
 
+## Resource
+
+I used the following to help me sort out how to make an iteratie merge sort:  
+https://interviewkickstart.com/blogs/learn/iterative-merge-sort
+
 ## Plagiarism Notice
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
