@@ -24,7 +24,7 @@ $x + 1 < 1 + \log_{2} n$
 $x < \log_{2} n$  
 So the outerloop runs in $\Theta(log n)$.  
 
-The for loop that iterates through subArrays will run $\frac{n}{sortWidth} times, or
+The for loop that iterates through subArrays will run $\frac{n}{sortWidth}$ times, or
 $\frac{n}{2}+\frac{n}{4}+\frac{n}{8}+...$, summing up to $n$, giving us $\Theta(n)$.  
 
 The next while loop, will run $O(m)$ times, where m is the size of the subArrays its
