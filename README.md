@@ -19,4 +19,7 @@ After each iteration, sortWidth doubles, so after x iterations, sortWidth will
 be $2^x$, and my outer while loop runs while $2^{x+1} < 2n$, as it must run so that
 it performs at least one iteration encompassing the entire input array.  
 Taking $\log_{2}$ of both sides of the inequality:  
-$\log_{2} 2^{x+1} < \log_{2} 2n$
+$\log_{2} 2^{x+1} < \log_{2} 2n$  
+$x + 1 < 1 + \log_{2} n$  
+$x < \log_{2} n$  
+So the outerloop runs in $\Theta(log n)$  
