@@ -32,7 +32,7 @@ merging, and when $subArrayMid \not\geq rightSortBound$, the for loop within may
 need to run a further $O(m)$ times, so when needing to shift m elements m times,
 we get $\Theta(n^2)$  
 
-Adding up these we get $\Theta(log_{2} n) + \Theta(2) +\Theta(n^2)$. As we don't
+Adding up these we get $\Theta(log_{2} n) + \Theta(n) +\Theta(n^2)$. As we don't
 account for lower order terms, or constants, that gives us a final worst case
 scenario time complexity of $\Theta(n^2)$ for my iterative in place merge sort.
 
