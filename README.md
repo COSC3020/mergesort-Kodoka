@@ -22,7 +22,7 @@ Taking $\log_{2}$ of both sides of the inequality:
 $\log_{2} 2^{x+1} < \log_{2} 2n$  
 $x + 1 < 1 + \log_{2} n$  
 $x < \log_{2} n$  
-So the outerloop runs in $\Theta(log n)$.  
+So the outerloop runs $\Theta(log n)$ times.  
 
 The for loop that iterates through subArrays will run $\frac{n}{sortWidth}$ times, or
 $\frac{n}{2}+\frac{n}{4}+\frac{n}{8}+...$, summing up to $n$, giving us $\Theta(n)$.  
@@ -32,9 +32,9 @@ merging, and when $subArrayMid \not\geq rightSortBound$, the for loop within may
 need to run a further $O(m)$ times, so when needing to shift m elements m times,
 we get $\Theta(n^2)$  
 
-Adding up these we get $\Theta(log_{2} n) + \Theta(n) +\Theta(n^2)$. As we don't
-account for lower order terms, or constants, that gives us a final worst case
-scenario time complexity of $\Theta(n^2)$ for my iterative in place merge sort.
+The time complexity of these loops is multiplied out, giving us $\Theta(log_{2} n)
+\cdot \Theta(n) \cdot \Theta(n^2) = \Theta(n^3 \log_{2} n$ as a final worst case
+scenario time complexity for my iterative in place merge sort.
 
 ## Resource
 
