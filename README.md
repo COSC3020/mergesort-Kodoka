@@ -33,7 +33,7 @@ need to run a further $O(m)$ times, so when needing to shift m elements m times,
 we get $\Theta(n^2)$  
 
 The time complexity of these loops is multiplied out, giving us $\Theta(log_{2} n)
-\cdot \Theta(n) \cdot \Theta(n^2) = \Theta(n^3 \log_{2} n$ as a final worst case
+\cdot \Theta(n) \cdot \Theta(n^2) = \Theta(n^3 \log_{2} n)$ as a final worst case
 scenario time complexity for my iterative in place merge sort.
 
 ## Resource
